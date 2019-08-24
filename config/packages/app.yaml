@@ -1,0 +1,9 @@
+netgen_layouts:
+  view:
+    block_view:
+      default:
+        list\list:
+          template: "/block/list/list.html.twig"
+          match:
+            block\definition: list
+            block\view_type: list
