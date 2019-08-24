@@ -36,6 +36,7 @@
         "symfony/yaml": "*",
 
         "contentful/contentful-bundle": "^4.0",
+        "michelf/php-markdown": "^1.8",
 
         "netgen/layouts-standard": "~1.0.0",
         "netgen/layouts-contentful": "~1.0.0"
