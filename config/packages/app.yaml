@@ -7,3 +7,7 @@ netgen_layouts:
           match:
             block\definition: list
             block\view_type: list
+
+  query_types:
+    contentful_references:
+      name: 'Contentful references'
