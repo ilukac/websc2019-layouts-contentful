@@ -34,3 +34,8 @@ services:
             - "@request_stack"
         tags:
             - { name: netgen_layouts.query_type_handler, type: contentful_references }
+
+    app.block.block_definition.handler.plugin.html_element_plugin:
+        class: App\Block\Plugin\HtmlElementPlugin
+        tags:
+            - { name: netgen_layouts.block_definition_handler.plugin }

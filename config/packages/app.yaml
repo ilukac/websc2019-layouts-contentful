@@ -7,6 +7,11 @@ netgen_layouts:
           match:
             block\definition: list
             block\view_type: list
+        contentful_entry_field:
+          template: "/block/contentful_entry_field.html.twig"
+          match:
+            block\definition: contentful_entry_field
+            block\view_type: contentful_entry_field
 
   query_types:
     contentful_references:
