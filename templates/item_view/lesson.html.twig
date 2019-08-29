@@ -1,0 +1,7 @@
+<div class="lesson">
+    <h3 class="name"><a href="{{ path(item.object) }}">{{ item.object.name }}</a></h3>
+    {% if item.object.getimage() is not null  %}
+        <img src="{{ item.object.getimage().file.url }}?h=100&w=100"/>
+    {% endif %}
+    <p>{{ item.object.getshortDescription() }}</p>
+</div>

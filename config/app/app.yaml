@@ -1,0 +1,34 @@
+view:
+  block_view:
+    default:
+      list\list:
+        template: "block/list/list.html.twig"
+        match:
+          block\definition: list
+          block\view_type: list
+      contentful_entry_field:
+        template: "block/contentful_entry_field.html.twig"
+        match:
+          block\definition: contentful_entry_field
+          block\view_type: contentful_entry_field
+  item_view:
+    default:
+      contentful_entry\course:
+        template: "item_view/course.html.twig"
+        match:
+          contentful\content_type: course
+#            item\view_type: standard
+      contentful_entry\lesson:
+        template: "item_view/lesson.html.twig"
+        match:
+          contentful\content_type: lesson
+#           item\view_type: standard
+      contentful_entry\category:
+        template: "item_view/category.html.twig"
+        match:
+          contentful\content_type: category
+#          item\view_type: standard
+
+query_types:
+  contentful_references:
+    name: 'Contentful references'
