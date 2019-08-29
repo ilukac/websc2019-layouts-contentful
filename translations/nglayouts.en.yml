@@ -1,0 +1,1 @@
+layout_resolver.condition.ip_address_range: 'IP address ranges (delimit with , or ;)'

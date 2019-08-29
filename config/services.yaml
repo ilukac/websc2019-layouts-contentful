@@ -39,3 +39,13 @@ services:
         class: App\Block\Plugin\HtmlElementPlugin
         tags:
             - { name: netgen_layouts.block_definition_handler.plugin }
+
+    app.condition_type.ip_address_range_condition:
+        class: App\Layout\Resolver\ConditionType\IpAddressRange
+        tags:
+            - { name: netgen_layouts.condition_type }
+
+    app.layout.resolver.form.condition_type.mapper.ip_address_range_condition:
+      class: App\Layout\Resolver\Form\ConditionType\Mapper\IpAddressRange
+      tags:
+        - { name: netgen_layouts.condition_type.form_mapper, condition_type: ip_address_range }
