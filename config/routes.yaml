@@ -1,3 +1,9 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+static_page:
+  path: /static
+  defaults:
+    _controller: 'FrameworkBundle:Template:template'
+    template: '@NetgenLayouts/empty_page.html.twig'
